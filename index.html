@@ -1,0 +1,67 @@
+<!-- Ibrahim Egan 2017 - Schwack Cinema -->
+<!-- www.thepaperidea.com -->
+<!-- All Rights Reserved -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Splash Screen</title>
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 1400px)" href="css/tablet.css" type="text/css" />
+	<link rel="stylesheet" media="only screen and (max-width: 700px), only screen and (max-device-width: 700px)" href="css/mobile.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="app" v-if="json">
+		<!-- Insert this in any templating engine youll use for header -->
+		<!-- Header starts here -->
+		<header>
+			<div>
+				<a id="hamburger-menu" :class="{ active: nav }" @click="nav = !nav">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</a>
+				<a id="logo" href="./"></a>
+				<div class="select">
+					<select v-model="location">
+						<option v-for="location in json.location" :value="location.value" v-text="location.name"></option>
+					</select>
+				</div>
+			</div>
+			<nav :class="{ active: nav }">
+				<ul v-if="json.page">
+					<li v-for="page in json.page" :class="{ active: checkPage(page.route) }">
+						<!-- Remove {.prevent} in click to go to link -->
+						<a :href="page.route" v-text="page.name" @click.prevent="active = page.route"></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Header ends here -->
+
+		<!-- Body starts here -->
+		<div class="content">
+			<div class="cover-image">
+				<div class="section">
+					<h1>Welcome to Schwack Cinema</h1>
+					<div class="form">
+						<div class="select large">
+							<select v-model="location">
+								<option v-for="location in json.location" :value="location.value" v-text="location.name"></option>
+							</select>
+						</div>
+						<button class="button large primary">Go</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Body ends here -->
+	</div>
+	<script type="text/javascript" src="js/vue.js"></script>
+	<script type="text/javascript" src="js/axios.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

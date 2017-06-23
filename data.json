@@ -1,0 +1,37 @@
+{
+	"default": {
+		"route": "index.html"
+	},
+	"location": {
+		"0": {
+			"name": "Select a Location",
+			"value": ""
+		},
+		"1": {
+			"name": "Malé City",
+			"value": "male-city"
+		},
+		"2": {
+			"name": "Hulhumale City",
+			"value": "hulhumale-city"
+		}
+	},
+	"page": {
+		"0": {
+			"name": "Home",
+			"route": "index.html"
+		},
+		"1": {
+			"name": "About",
+			"route": "about.html"
+		},
+		"2": {
+			"name": "Location",
+			"route": "location.html"
+		},
+		"3": {
+			"name": "Schedule",
+			"route": "schedule.html"
+		}
+	}
+}

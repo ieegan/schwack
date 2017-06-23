@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+*{
+	font-family:"Apercu Pro" !important;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.select{
+	display:inline-block;
+	position:relative;
+}
+.select>select{
+	-webkit-appearance: none;
+	border-radius:2px;
+	border:1px solid rgba(255,255,255,.3);
+	background:none;
+	color:white;
+	padding:10px 32px 10px 18px;
+	font-size:12px;
+	box-sizing:border-box;
+}
+.select.large>select{
+	padding:12px 44px 12px 20px;
+	font-size:13px;
+}
+.select:after{
+	content:"";
+	width:10px;
+	height:10px;
+	position:absolute;
+	top:50%;
+	right:10px;
+	transform:translate(0,-50%);
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid white;
+}
+.select.large:after{
+	right:20px;
+}
+
+.button{
+	-webkit-appearance: none;
+	border-radius:2px;
+	border:1px solid rgba(255,255,255,.3);
+	background:none;
+	color:white;
+	padding:10px 18px;
+	font-size:12px;
+	box-sizing:border-box;
+}
+.button.large{
+	padding:12px 20px;
+}
+.button.primary{
+	background:#54C4D0;
+	border:1px solid #54C4D0;
+}
+
+body{
+	background:#272727;
+}
+html,body{
+	height:100%;
+}
+#app{
+	padding-top:67px;
+	height:100%;
+	box-sizing:border-box;
+}
+
+header{
+	z-index:10;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	background:rgba(0,0,0,.4);
+	border-bottom:1px solid rgba(0,0,0,.2);
+}
+header>div{
+	display:inline-block;
+}
+header>div>*{
+	display:inline-block;
+	vertical-align:middle;
+}
+header #logo{
+	background:url('../img/logo.png') no-repeat center / contain;
+	width:148px;
+	height:30px;
+	margin:18px 24px;
+}
+header #hamburger-menu{
+	width:14px;
+	display:none;
+}
+header #hamburger-menu>ul>li{
+	display:block;
+	height:2px;
+	background:white;
+	margin-bottom:3px;
+	transition:all 200ms ease;
+}
+header #hamburger-menu>ul>li:last-child{
+	margin:0;
+}
+header>nav{
+	float:right;
+	margin:0 32px;
+}
+header>nav>ul>li{
+	display:inline-block;
+	line-height:66px;
+	margin-right:80px;
+	position:relative;
+}
+header>nav>ul>li:last-child{
+	margin-right:0;
+}
+header>nav>ul>li:after{
+	content:"";
+	position:absolute;
+	bottom:0;
+	left:50%;
+	transform:translate(-50%,0);
+	height:3px;
+	width:0;
+	background:#54C4D0;
+	transition:all 200ms cubic-bezier(.11,.97,.42,.67);
+}
+header>nav>ul>li.active:after{
+	width:calc(100% + 16px);
+}
+header>nav>ul>li.active>a{
+	color:white;
+}
+header>nav>ul>li>a{
+	color:#ccc;
+	font-size:.85em;
+	text-decoration:none;
+	transition:all 400ms ease;
+}
+header>nav>ul>li>a:hover{
+	color:white;
+}
+
+/*content*/
+.content{
+	min-height:100%;
+	position:relative;
+}
+.content>.cover-image{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	overflow:hidden;
+	background:url('../img/cover.jpg') no-repeat center / cover;
+}
+.content>.cover-image>.section{
+	position:absolute;
+	bottom:120px;
+	left:120px;
+	right:120px;
+}
+.content>.cover-image>.section>h1{
+	font-size:2em;
+	color:white;
+	display:inline-block;
+}
+.content>.cover-image>.section>.form{
+	float:right;
+}
+.content>.cover-image>.section>.form>.select{
+	margin-right:10px;
+}
