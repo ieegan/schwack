@@ -15,7 +15,7 @@ var app = new Vue({
 	},
 	mounted: function(){
 		self = this
-		axios.get('/data.json')
+		axios.get('data.json')
 		.then(function (response) {
 			self.json = response.data
 			self.active = self.json.default.route

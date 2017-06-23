@@ -75,7 +75,8 @@ table {
 	position:absolute;
 	top:50%;
 	right:10px;
-	transform:translate(0,-50%);
+	-webkit-transform:translate(0,-50%);
+	        transform:translate(0,-50%);
 	width: 0; 
 	height: 0; 
 	border-left: 5px solid transparent;
@@ -147,6 +148,7 @@ header #hamburger-menu>ul>li{
 	height:2px;
 	background:white;
 	margin-bottom:3px;
+	-webkit-transition:all 200ms ease;
 	transition:all 200ms ease;
 }
 header #hamburger-menu>ul>li:last-child{
@@ -170,10 +172,12 @@ header>nav>ul>li:after{
 	position:absolute;
 	bottom:0;
 	left:50%;
-	transform:translate(-50%,0);
+	-webkit-transform:translate(-50%,0);
+	        transform:translate(-50%,0);
 	height:3px;
 	width:0;
 	background:#54C4D0;
+	-webkit-transition:all 200ms cubic-bezier(.11,.97,.42,.67);
 	transition:all 200ms cubic-bezier(.11,.97,.42,.67);
 }
 header>nav>ul>li.active:after{
@@ -186,6 +190,7 @@ header>nav>ul>li>a{
 	color:#ccc;
 	font-size:.85em;
 	text-decoration:none;
+	-webkit-transition:all 400ms ease;
 	transition:all 400ms ease;
 }
 header>nav>ul>li>a:hover{
