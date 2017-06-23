@@ -15,3 +15,5 @@ Some instructions will be commented out in the files directly.
 Just clone and open index.html on a web server.
 
 Might no load when opened on a web browser directly as File is not in the protocol schemes supported for cross origin requests.
+
+[Click here for demo page](http://schwack.thepaperidea.com/)
