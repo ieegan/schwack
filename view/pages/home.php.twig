@@ -1,0 +1,46 @@
+{% extends "layout.php.twig" %}
+
+{% block title %}Now / Upcoming{% endblock %}
+
+{% block content %}
+<div class="center">
+    <h2>Now Showing</h2>
+	<div class="swiper-container movies-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="movie in json.movies">
+                <span class="contain" v-bind:style="{ backgroundImage: 'url(' + json.default.imgdir + json.default.movies.imgdir + movie.image + ')' }">
+                    <img :src="json.default.imgdir + json.default.movies.imgdir + movie.image" :alt="movie.name">
+                    <div class="caption">
+                        <div class="info" v-text="movie.rating"></div>
+                        <div class="name" v-text="movie.name"></div>
+                        <div class="premiers" v-if="movie.premiers" v-text="movie.premiers"></div>
+                        <a href="/movie-detail.php" class="button primary large">Book Now</a>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <h2>Coming Soon</h2>
+    <div class="swiper-container movies-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="movie in json.movies">
+                <span class="contain" v-bind:style="{ backgroundImage: 'url(' + json.default.imgdir + json.default.movies.imgdir + movie.image + ')' }">
+                    <img :src="json.default.imgdir + json.default.movies.imgdir + movie.image" :alt="movie.name">
+                    <div class="caption">
+                        <div class="info" v-text="movie.rating"></div>
+                        <div class="name" v-text="movie.name"></div>
+                        <div class="premiers" v-if="movie.premiers" v-text="movie.premiers"></div>
+                        <a href="/movie-detail.php" class="button primary large">Book Now</a>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+{% endblock %}

@@ -1,14 +1,14 @@
-header>nav{
+header nav{
 	float:none;
 	margin:0 20px;
 }
-header>nav>ul>li{
+header nav>ul>li{
 	display:inline-block;
 	line-height:50px;
 	margin-right:50px;
 	position:relative;
 }
-header #hamburger-menu{
+header div#sub>#hamburger-menu{
 	display:inline-block;
 	position:absolute;
 	top:26px;
@@ -32,17 +32,17 @@ header #hamburger-menu.active>ul>li:nth-child(3){
 header{
 	text-align:center;
 }
-header .select{
+header div#sub>.select{
 	display:none;
 }
-header>div{
+header div#sub{
 	display:block;
 	position:relative;
 }
-header>nav{
+header nav{
 	display:none;
 }
-header>nav.active{
+header nav.active{
 	display:block;
 }
 .content>.cover-image>.section{

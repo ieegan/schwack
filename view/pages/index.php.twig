@@ -1,0 +1,21 @@
+{% extends "layout.php.twig" %}
+
+{% block title %}Splash Screen{% endblock %}
+
+{% block content %}
+<div class="content">
+	<div class="cover-image">
+		<div class="section">
+			<h1>Welcome to Schwack Cinema</h1>
+			<div class="form">
+				<div class="select large">
+					<select v-model="location">
+						<option v-for="location in json.location" :value="location.value" v-text="location.name"></option>
+					</select>
+				</div>
+				<a href="/home.php" class="button large primary">Go</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

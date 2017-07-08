@@ -1,0 +1,24 @@
+{
+  "name": "schwack",
+  "version": "1.0.0",
+  "description": "Project is made with VueJS as a small framework. https://vuejs.org/",
+  "main": "index.js",
+  "dependencies": {
+    "swiper": "^3.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ieegan/schwack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ieegan/schwack/issues"
+  },
+  "homepage": "https://github.com/ieegan/schwack#readme"
+}

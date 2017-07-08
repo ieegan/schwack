@@ -1,6 +1,11 @@
 {
 	"default": {
-		"route": "index.html"
+		"route": "index.php",
+		"imgdir": "img/",
+		"movies": {
+			"imgdir": "movies/",
+			"thumbnailprefix": "thumb-"
+		}
 	},
 	"location": {
 		"0": {
@@ -19,19 +24,161 @@
 	"page": {
 		"0": {
 			"name": "Home",
-			"route": "index.html"
+			"route": "home.php"
 		},
 		"1": {
 			"name": "About",
-			"route": "about.html"
+			"route": "about.php"
 		},
 		"2": {
 			"name": "Location",
-			"route": "location.html"
+			"route": "location.php"
 		},
 		"3": {
 			"name": "Schedule",
-			"route": "schedule.html"
+			"route": "schedule.php"
 		}
-	}
+	},
+	"movies": {
+		"0": {
+			"name": "Inception",
+			"youtube": "v1myaYSTnzs",
+			"image": "inception.jpg",
+			"imdb": 7,
+			"premiers": "May 5th",
+			"genre": ["Action", "Horror"],
+			"rating": "PG-13",
+			"runtime": "1hr 13mins",
+			"description": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.",
+			"showtimes": {
+				"0": {
+					"Date": "May 7th",
+					"Day": "Monday",
+					"Time": "10pm"
+				},
+				"1": {
+					"Date": "May 8th",
+					"Day": "Tuesday",
+					"Time": "11pm"
+				}
+			}
+		},
+		"1": {
+			"name": "Inception",
+			"youtube": "v1myaYSTnzs",
+			"image": "inception.jpg",
+			"imdb": 7,
+			"premiers": "May 5th",
+			"genre": ["Action", "Horror"],
+			"rating": "PG-13",
+			"runtime": "1hr 13mins",
+			"description": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.",
+			"showtimes": {
+				"0": {
+					"Date": "May 7th",
+					"Day": "Monday",
+					"Time": "10pm"
+				},
+				"1": {
+					"Date": "May 8th",
+					"Day": "Tuesday",
+					"Time": "11pm"
+				}
+			}
+		},
+		"2": {
+			"name": "Inception",
+			"youtube": "v1myaYSTnzs",
+			"image": "inception.jpg",
+			"imdb": 7,
+			"premiers": "May 5th",
+			"genre": ["Action", "Horror"],
+			"rating": "PG-13",
+			"runtime": "1hr 13mins",
+			"description": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.",
+			"showtimes": {
+				"0": {
+					"Date": "May 7th",
+					"Day": "Monday",
+					"Time": "10pm"
+				},
+				"1": {
+					"Date": "May 8th",
+					"Day": "Tuesday",
+					"Time": "11pm"
+				}
+			}
+		},
+		"3": {
+			"name": "Inception",
+			"youtube": "v1myaYSTnzs",
+			"image": "inception.jpg",
+			"imdb": 7,
+			"premiers": "May 5th",
+			"genre": ["Action", "Horror"],
+			"rating": "PG-13",
+			"runtime": "1hr 13mins",
+			"description": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.",
+			"showtimes": {
+				"0": {
+					"Date": "May 7th",
+					"Day": "Monday",
+					"Time": "10pm"
+				},
+				"1": {
+					"Date": "May 8th",
+					"Day": "Tuesday",
+					"Time": "11pm"
+				}
+			}
+		},
+		"4": {
+			"name": "Inception",
+			"youtube": "v1myaYSTnzs",
+			"image": "inception.jpg",
+			"imdb": 7,
+			"premiers": "May 5th",
+			"genre": ["Action", "Horror"],
+			"rating": "PG-13",
+			"runtime": "1hr 13mins",
+			"description": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.",
+			"showtimes": {
+				"0": {
+					"Date": "May 7th",
+					"Day": "Monday",
+					"Time": "10pm"
+				},
+				"1": {
+					"Date": "May 8th",
+					"Day": "Tuesday",
+					"Time": "11pm"
+				}
+			}
+		},
+		"5": {
+			"name": "Inception",
+			"youtube": "v1myaYSTnzs",
+			"image": "inception.jpg",
+			"imdb": 7,
+			"premiers": "May 5th",
+			"genre": ["Action", "Horror"],
+			"rating": "PG-13",
+			"runtime": "1hr 13mins",
+			"description": "Fearing that the actions of Superman are left unchecked, Batman takes on the Man of Steel, while the world wrestles with what kind of a hero it really needs.",
+			"showtimes": {
+				"0": {
+					"Date": "May 7th",
+					"Day": "Monday",
+					"Time": "10pm"
+				},
+				"1": {
+					"Date": "May 8th",
+					"Day": "Tuesday",
+					"Time": "11pm"
+				}
+			}
+		}
+	},
+	"nowshowing": [0,1,2,3],
+	"comingsoon": [0,1,2,3]
 }
